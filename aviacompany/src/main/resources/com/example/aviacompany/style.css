@@ -1,0 +1,106 @@
+.enterB{
+    -fx-background-color: linear-gradient(#c8fb3f, #88bf39);
+    -fx-background-radius: 30;
+        -fx-background-insets: 0;
+        -fx-text-fill: white;
+}
+
+.enterB:hover {
+    -fx-background-color: linear-gradient(#93bb59, #c8fb3f);
+}
+
+.name{
+-fx-background-radius: 30;
+}
+
+.money{
+-fx-background-radius: 30;
+}
+
+.exitB{
+    -fx-background-radius: 30;
+    -fx-background-color: linear-gradient(#ff1c1c,#c60f0f);
+}
+
+
+.exitB:hover{
+    -fx-background-color: linear-gradient(#bb2525,#930b0b);
+}
+.exitB:pressed{
+    -fx-background-color: linear-gradient(#ff4b4b,#ff3232);
+}
+
+
+
+
+.buyTickets,.converter, .about, .popular{
+
+    -fx-background-radius: 30;
+    -fx-background-color: linear-gradient(#6f950b,#daee0a);
+
+}
+
+.buyTickets:hover,.converter:hover, .about:hover, .popular:hover{
+
+    -fx-background-color: linear-gradient(#6f950b,#b1bf20);
+
+}
+
+.buyTickets:pressed,.converter:pressed, .about:pressed, .popular:pressed{
+
+    -fx-background-color: linear-gradient(#7a9d1f,#e3f905);
+
+}
+
+
+.change{
+    fx-background-image: url('arrows.jpg');
+}
+
+.saveB,.getPrice,.getTicket{
+    -fx-background-color: linear-gradient(#d11f1f,#f90505);
+    -fx-background-radius: 30;
+}
+
+.saveB:hover,.getPrice:hover,.getTicket:hover{
+    -fx-background-color: linear-gradient(#ad1818,#880000);
+}
+
+.saveB:pressed,.getPrice:pressed,.getTicket:pressed{
+    -fx-background-color: linear-gradient(#d11f1f,#f90505);
+}
+
+
+.toM,.toMain2{
+    -fx-background-color: linear-gradient(#00ff0c,#9df119);
+    -fx-background-radius: 30;
+}
+
+.toM:hover, .toMain2:hover{
+    -fx-background-color: linear-gradient(#00ff0c,#6db300);
+}
+
+.toM:pressed,.toMain2:pressed{
+    -fx-background-color: linear-gradient(#00ff0c,#9df119);
+}
+
+
+
+.payB{
+    -fx-background-color: linear-gradient(#00ff0c,#9df119);
+    -fx-background-radius: 30;
+}
+
+.payB:hover{
+    -fx-background-color: linear-gradient(#00ff0c,#6db300);
+}
+
+.payB:pressed{
+    -fx-background-color: linear-gradient(#00ff0c,#9df119);
+}
+
+.convert{
+    -fx-background-image: url('conv.png');
+    -fx-background-size: 100px 100px;
+
+}

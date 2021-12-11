@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aviacompany.BuyTickets">
+   <children>
+      <TabPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #F0E68C#F0E68C;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Личная информация">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #FFE4B5;">
+                     <children>
+                        <Label layoutX="154.0" layoutY="44.0" text="Имя">
+                           <font>
+                              <Font name="Century" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="136.0" layoutY="103.0" text="Фамилия">
+                           <font>
+                              <Font name="Century" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="138.0" layoutY="158.0" text="Отчество">
+                           <font>
+                              <Font name="Century" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="155.0" layoutY="220.0" text="Пол">
+                           <font>
+                              <Font name="Century" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="101.0" layoutY="286.0" text="Дата рождения">
+                           <font>
+                              <Font name="Century" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="116.0" layoutY="356.0" text="Гражданство">
+                           <font>
+                              <Font name="Century" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="116.0" layoutY="427.0" text="№ документа">
+                           <font>
+                              <Font name="Century" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="130.0" layoutY="512.0" text="Годен до">
+                           <font>
+                              <Font name="Century" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="138.0" layoutY="596.0" text="ИИН">
+                           <font>
+                              <Font name="Century" size="21.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="nameField" layoutX="289.0" layoutY="42.0" prefHeight="31.0" prefWidth="249.0" promptText="На латинице." style="-fx-background-radius: 30;" />
+                        <TextField fx:id="surnameField" layoutX="289.0" layoutY="101.0" prefHeight="31.0" prefWidth="249.0" promptText="На латинице." style="-fx-background-radius: 30;" />
+                        <TextField fx:id="patrField" layoutX="289.0" layoutY="156.0" prefHeight="31.0" prefWidth="249.0" promptText="На латинице." style="-fx-background-radius: 30;" />
+                        <ChoiceBox fx:id="genderBox" layoutX="339.0" layoutY="218.0" prefWidth="150.0" style="-fx-background-radius: 30;" />
+                        <DatePicker fx:id="birthday" layoutX="305.0" layoutY="284.0" promptText="ДД-ММ-ГГ" />
+                        <TextField fx:id="natioField" layoutX="289.0" layoutY="354.0" prefHeight="31.0" prefWidth="249.0" promptText="Сокращенно." style="-fx-background-radius: 30;" />
+                        <TextField fx:id="docNumber" layoutX="289.0" layoutY="425.0" prefHeight="31.0" prefWidth="249.0" promptText="Без пробелов." style="-fx-background-radius: 30;" />
+                        <TextField fx:id="IIN" layoutX="289.0" layoutY="594.0" prefHeight="31.0" prefWidth="249.0" promptText="Без пробелов." style="-fx-background-radius: 30;" />
+                        <TextArea layoutX="585.0" layoutY="54.0" prefHeight="411.0" prefWidth="391.0" text="ПРИМЕЧАНИЕ.&#10;При заполнении анкеты старайтесь заполнить&#10;только действительными фактами.&#10;Все данные будут тщательно проверяться!&#10;&#10;Будьте ответственны за свои поступки.&#10;И не будьте детьми.&#10;&#10;Иначе будет не сладко.&#10;&#10;Имя и фамилию ОБЯЗАТЕЛЬНО писать &#10;латиницей!&#10;&#10;Никаких других символов быть не должно.&#10;&#10;">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextArea>
+                        <Button id="saveB" fx:id="saveB" layoutX="705.0" layoutY="516.0" mnemonicParsing="false" onAction="#save" styleClass="saveB" stylesheets="@style.css" text="Сохранить" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Button>
+                        <DatePicker fx:id="godenDO" layoutX="305.0" layoutY="510.0" promptText="ДД-ММ-ГГ" />
+                        <Button id="toM" fx:id="toMainB" layoutX="646.0" layoutY="592.0" mnemonicParsing="false" onAction="#toMainAction" styleClass="toM" stylesheets="@style.css" text="На главную страницу." textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="83.0" layoutY="704.0" text="Все права защищены. Developed by Myrzatay Eldar. Inspired by 1.20.16.19.30." textFill="RED">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Подробности поездки">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #FFE4B5;">
+                     <children>
+                        <Accordion layoutX="130.0" layoutY="52.0" />
+                        <Label layoutX="83.0" layoutY="704.0" text="Все права защищены. Developed by Myrzatay Eldar. Inspired by 1.20.16.19.30." textFill="RED">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="130.0" layoutY="39.0" text="Откуда.">
+                           <font>
+                              <Font name="Century" size="21.0" />
+                           </font></Label>
+                        <Label layoutX="142.0" layoutY="104.0" text="Куда.">
+                           <font>
+                              <Font name="Century" size="21.0" />
+                           </font></Label>
+                        <Label layoutX="142.0" layoutY="167.0" text="Дата.">
+                           <font>
+                              <Font name="Century" size="21.0" />
+                           </font></Label>
+                        <Label layoutX="137.0" layoutY="233.0" text="Класс.">
+                           <font>
+                              <Font name="Century" size="21.0" />
+                           </font></Label>
+                        <Label layoutX="72.0" layoutY="299.0" text="И в обратную сторону.">
+                           <font>
+                              <Font name="Century" size="21.0" />
+                           </font></Label>
+                        <Label layoutX="109.0" layoutY="450.0" text="Количество.">
+                           <font>
+                              <Font name="Century" size="21.0" />
+                           </font></Label>
+                        <TextField fx:id="fromF" layoutX="342.0" layoutY="37.0" style="-fx-background-radius: 30;" />
+                        <TextField fx:id="toF" layoutX="342.0" layoutY="102.0" style="-fx-background-radius: 30;" />
+                        <DatePicker fx:id="flyDate" layoutX="319.0" layoutY="165.0" promptText="ДД-ММ-ГГ" />
+                        <Label layoutX="87.0" layoutY="372.0" text="Обратный рейс.">
+                           <font>
+                              <Font name="Century" size="21.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="returnFlyDate" layoutX="315.0" layoutY="370.0" promptText="ДД-ММ-ГГ" />
+                        <ChoiceBox fx:id="count" layoutX="353.0" layoutY="448.0" prefWidth="150.0" />
+                        <Button id="payB" fx:id="payB" layoutX="708.0" layoutY="619.0" mnemonicParsing="false" onAction="#payAction" style="-fx-background-radius: 30;" styleClass="payB" stylesheets="@style.css" text="Оплатить.">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font></Button>
+                        <Label layoutX="135.0" layoutY="627.0" text="Итого.">
+                           <font>
+                              <Font name="Century" size="21.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="itogoField" layoutX="342.0" layoutY="625.0" style="-fx-background-radius: 30;" />
+                        <Label fx:id="payStat2" layoutX="665.0" layoutY="333.0" prefHeight="27.0" prefWidth="256.0" textAlignment="RIGHT" textFill="RED">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="payStat" layoutX="603.0" layoutY="382.0" prefHeight="27.0" prefWidth="381.0" textAlignment="RIGHT" textFill="RED">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button id="getPrice" fx:id="getPrice" layoutX="358.0" layoutY="529.0" mnemonicParsing="false" onAction="#getPriceAction" styleClass="getPrice" stylesheets="@style.css" text="Посчитать. " textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="276.0" layoutY="415.0" text="Один человек может купить максимум 5 билетов." textFill="RED" />
+                        <ChoiceBox fx:id="classBox" layoutX="353.0" layoutY="231.0" prefWidth="150.0" />
+                        <ChoiceBox fx:id="yesOrNoBox" layoutX="353.0" layoutY="297.0" prefWidth="150.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Ваш билет">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #FFE4B5;">
+                     <children>
+                        <Accordion layoutX="130.0" layoutY="52.0" />
+                        <Label layoutX="83.0" layoutY="704.0" text="Все права защищены. Developed by Myrzatay Eldar. Inspired by 1.20.16.19.30." textFill="RED">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="130.0" layoutY="52.0" prefHeight="607.0" prefWidth="482.0" style="-fx-background-color: #FFFFFF;">
+                           <children>
+                              <Label layoutX="137.0" layoutY="4.0" text="Национальная авиакомпания." />
+                              <Label layoutX="170.0" layoutY="26.0" text="ТОО &quot;Myrzatay&quot;" />
+                              <Label fx:id="orNumL" layoutX="170.0" layoutY="49.0" text="Заказ №000000" />
+                              <Label layoutX="149.0" layoutY="70.0" text="Адрес: Аль-Фараби, 71." />
+                              <Label fx:id="timeOfPay" layoutX="90.0" layoutY="95.0" text="Дата и время заказа: 00.00.0000 00:00:00" />
+                              <Label layoutX="11.0" layoutY="118.0" prefHeight="21.0" prefWidth="471.0" text="=============================================" />
+                              <Label layoutX="14.0" layoutY="147.0" text="Владелец билета(-ов):" />
+                              <Label fx:id="nameInfo" layoutX="192.0" layoutY="147.0" text="MYRZATAY ELDAR ERIKULY" />
+                              <Label layoutX="51.0" layoutY="179.0" text="ИИН: " />
+                              <Label fx:id="IINLabel" layoutX="228.0" layoutY="179.0" text="011117501160" />
+                              <Label layoutX="45.0" layoutY="209.0" text="Откуда:" />
+                              <Label fx:id="fromLabel" layoutX="253.0" layoutY="209.0" text="Almaty" />
+                              <Label layoutX="51.0" layoutY="240.0" text="Куда:" />
+                              <Label fx:id="toLabel" layoutX="260.0" layoutY="242.0" text="Paris" />
+                              <Label layoutX="48.0" layoutY="272.0" text="Класс:" />
+                              <Label fx:id="classLabel" layoutX="252.0" layoutY="272.0" text="Бизнес" />
+                              <Label layoutX="27.0" layoutY="304.0" text="Дата вылета:" />
+                              <Label layoutX="12.0" layoutY="341.0" text="Дата обратного рейса:" />
+                              <Label fx:id="flydateLabel" layoutX="244.0" layoutY="304.0" text="00.00.0000" />
+                              <Label fx:id="RflydateLabel" layoutX="245.0" layoutY="341.0" text="00.00.0000" />
+                              <Label layoutX="27.0" layoutY="377.0" text="Количество:" />
+                              <Label fx:id="howmanyLabel" layoutX="271.0" layoutY="377.0" text="5" />
+                              <Label layoutX="38.0" layoutY="418.0" text="Статус:" />
+                              <Label layoutX="233.0" layoutY="418.0" text="ОПЛАЧЕНО." />
+                              <Label layoutX="9.0" layoutY="456.0" prefHeight="21.0" prefWidth="471.0" text="=============================================" />
+                              <Label layoutX="34.0" layoutY="505.0" text="Наша компания желает вам приятного полета и отдыха." />
+                              <Label layoutX="132.0" layoutY="528.0" text="Спасибо за ваше доверие." />
+                              <Label layoutX="135.0" layoutY="561.0" text="2021 год. ТОО &quot;Myrzatay&quot;." />
+                           </children>
+                        </Pane>
+                        <Button id="toMain2" fx:id="toMainPB" layoutX="688.0" layoutY="605.0" mnemonicParsing="false" onAction="#toMainAction1" styleClass="toMain2" stylesheets="@style.css" text="На главную страницу." textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Button>
+                        <Button id="getTicket" fx:id="getTicket" layoutX="717.0" layoutY="333.0" mnemonicParsing="false" onAction="#getTicketAction" styleClass="getTicket" stylesheets="@style.css" text="Получить билет." textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="664.0" layoutY="72.0" text="Не пугайтесь что здесь другая информация.">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="671.0" layoutY="110.0" text="Нажав на кнопку, вы получите ваш билет.">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="729.0" layoutY="146.0" text="Эта информация ложная.">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="721.0" layoutY="182.0" text="И не подлежит реальности.">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="762.0" layoutY="39.0" text="Аттеншн!!!" textFill="RED">
+                           <font>
+                              <Font name="Century Schoolbook" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

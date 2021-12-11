@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #FFE4B5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aviacompany.HelloController">
+   <children>
+      <TextField id="name" fx:id="nameField" layoutX="118.0" layoutY="177.0" prefHeight="31.0" prefWidth="296.0" promptText="Укажите, пожалуйста, ваше имя. " styleClass="name" stylesheets="@style.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField id="money" fx:id="moneyField" layoutX="70.0" layoutY="280.0" prefHeight="42.0" prefWidth="391.0" promptText="Укажите, пожалуйста, сумму ваших денег. " styleClass="money" stylesheets="@style.css">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <Label layoutX="30.0" layoutY="30.0" text="Добро пожаловать в приложение по покупке авиабилетов!">
+         <font>
+            <Font name="Microsoft YaHei Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="551.0" text="Все права защищены. Developed by Myrzatay Eldar. Inspired by 1.20.16.19.30." textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button id="enterB" fx:id="enterB" defaultButton="true" layoutX="205.0" layoutY="366.0" mnemonicParsing="false" onAction="#toMainPage" styleClass="enterB" stylesheets="@style.css" text="Войти." textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Button>
+      <Group layoutX="492.0" layoutY="154.0">
+         <children>
+            <Label layoutX="-29.0" prefHeight="175.0" prefWidth="508.0" text="Только о двух вещах мы будем жалеть на смертном одре - что мало любили и мало путешествовали." textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Mistral" size="37.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Label layoutX="661.0" layoutY="316.0" prefHeight="39.0" prefWidth="121.0" text="Марк Твен." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Mistral" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="logSL" layoutX="208.0" layoutY="332.0" prefHeight="21.0" prefWidth="129.0" text="Выполните вход." textFill="RED" />
+      <ImageView fitHeight="57.0" fitWidth="56.0" layoutX="35.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@profile.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="56.0" layoutX="4.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@money.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

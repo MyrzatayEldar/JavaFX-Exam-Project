@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #FFE4B5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aviacompany.mainPController">
+   <children>
+      <Pane prefHeight="173.0" prefWidth="1200.0" style="-fx-background-color: #F0E68C;">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="38.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@facebook.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="96.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@instagram.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="153.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@telegram.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="210.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@twitter.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="267.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@vk.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="320.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@wpp.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Label fx:id="welcomeL" layoutX="237.0" layoutY="87.0" text="Доброго времени суток, MyrzatayEldar. Попробуйте наши услуги.">
+         <font>
+            <Font name="Microsoft YaHei" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="211.0" layoutY="642.0" text="Все права защищены. Developed by Myrzatay Eldar. Inspired by 1.20.16.19.30." textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="profileL" layoutX="1026.0" layoutY="25.0" text="MyrzatayEldar">
+         <font>
+            <Font name="Microsoft YaHei" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="balanceL" layoutX="1030.0" layoutY="85.0" text="42500$">
+         <font>
+            <Font name="Microsoft YaHei" size="20.0" />
+         </font>
+      </Label>
+      <Button id="exitB" fx:id="logoutB" layoutX="1038.0" layoutY="133.0" mnemonicParsing="false" onAction="#logoutAction" styleClass="exitB" stylesheets="@style.css" text="Выйти." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button id="buyTickets" fx:id="buyTickets" layoutX="288.0" layoutY="273.0" mnemonicParsing="false" onAction="#buyTicketsAction" prefHeight="67.0" prefWidth="251.0" styleClass="buyTickets" stylesheets="@style.css" text="Купить авиабилеты.">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Button id="converter" fx:id="converter" layoutX="498.0" layoutY="447.0" mnemonicParsing="false" onAction="#converterAction" prefHeight="67.0" prefWidth="251.0" styleClass="converter" stylesheets="@style.css" text="Конвертер валют.">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Button id="popular" fx:id="popPhrases" layoutX="756.0" layoutY="273.0" mnemonicParsing="false" onAction="#popPhrasesAction" prefHeight="67.0" prefWidth="251.0" styleClass="popular" stylesheets="@style.css" text="Популярные фразы">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="968.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@profile.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="968.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@money.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="71.0" layoutX="194.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@premium-icon-plane-tickets-3088130.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="71.0" layoutX="404.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@free-icon-currency-exchange-4017367.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="71.0" layoutX="668.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@free-icon-conversation-942796.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
